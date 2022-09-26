@@ -1,5 +1,3 @@
-import random
-from matplotlib import pyplot as plt
 class Nuage_Point:
     def __init__(self, nombre_caracteristique):
         self.point = []
@@ -30,6 +28,9 @@ class Nuage_Point:
 
 
 if __name__ == "__main__":
+    import random
+    from matplotlib import pyplot as plt
+    
     test = Nuage_Point(2)
     for y in range (1, 2000) :
         x1 = random.randint(40, 90)

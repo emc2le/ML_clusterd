@@ -35,28 +35,28 @@ if __name__ == "__main__":
     for y in range (1, 2000) :
         x1 = random.randint(40, 90)
 
-        test.ajouter_point([x1, y], "Fraude") # x = tr par min, y = montant
+        test.ajouter_point([x1, y], "Fraud") # x = Number of transactions per minute, y = Amount
         plt.plot(x1, y, marker="o", color="red")
 
         x1 = random.randint(1, 20)
         y1 = random.randint (60000, 1000000)
-        test.ajouter_point([x1, y1], "Fraude") # x = tr par min, y = montant
+        test.ajouter_point([x1, y1], "Fraud") # x = Number of transactions per minute, y = Amount
         plt.plot(x1, y1, marker="o", color="red")
 
         y2 = random.randint(6, 2000)
         x2 = random.randint(1,3)
-        test.ajouter_point([x2, y2], "Pas de Fraude")
+        test.ajouter_point([x2, y2], "No Fraud")
         plt.plot(x2, y2, marker="o", color="green")
 
     for x in range (0,10):
         y2 = random.randint(50000, 1000000)
         x2 = 1
-        test.ajouter_point([x2, y2], "Fraude")
+        test.ajouter_point([x2, y2], "No Fraud")
 
         plt.plot(x2, y2, marker="o", color="red")
 
-    XATest = float(input("Nombre de tr par min : "))
-    YATest = float(input("Montant : "))
+    XATest = float(input("Number of transactions per minute : "))
+    YATest = float(input("Amount : "))
 
     Caracteristique = test.point_proche([XATest, YATest])
     plt.plot(XATest, YATest, marker="o", color="orange")

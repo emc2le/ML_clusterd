@@ -1,4 +1,3 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/emc2le/ML_clusterd/blob/main/ML_clustered.ipynb)
 # ML_clusterd
 The recomended python version is the 3.10 but you can run previous version.
 
